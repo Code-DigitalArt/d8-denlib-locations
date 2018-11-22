@@ -1,0 +1,9 @@
+name: Locations
+description: Points of interest module
+type: module
+core: 8.x
+package: Custom
+
+dependencies:
+  - drupal:views
+

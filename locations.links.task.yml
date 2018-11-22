@@ -1,0 +1,16 @@
+locations.tabs:
+  route_name: locations.tabs.default
+  title: 'Central Library'
+  base_route: locations.tabs.default
+
+locations.tabs_athmarPark:
+  route_name: locations.tabs.athmarPark
+  title: 'Athmar Park'
+  base_route: locations.tabs.default
+  weignt: 2
+
+locations.tabs_bearValley:
+  route_name: locations.tabs.bearValley
+  title: 'Bear Valley'
+  base_route: locations.tabs.default
+  weight: 3

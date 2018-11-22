@@ -1,0 +1,12 @@
+locations.map:
+  version: 8.x
+  css:
+    component:
+      css/map.css: {}
+  js:
+    js/map.js: {}
+    https://maps.googleapis.com/maps/api/js?key=AIzaSyCXI3eVYSWlR-zh64xM4zUWfke6zQMTbNA&callback=initMap: {type: external, scope: footer, attributes: { defer: true, async: true } }
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings

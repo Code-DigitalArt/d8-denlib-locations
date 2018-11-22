@@ -1,0 +1,5 @@
+locations.tabs.default:
+  title: 'Library locations'
+  route_name: locations.tabs.default
+  weight: 100
+  menu_name: main
