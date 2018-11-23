@@ -65,7 +65,7 @@ class LocationsController extends ControllerBase
 	{
 		return [
 			'#title' => 'Central Library',
-			'#markup' => 'Central Library<br> <div class="js-var"></div><br> <div id="map"></div>',
+			'#markup' => 'Central Library<br> <div class="js-var"></div><br><p>Select local:</p><div class="type"></div> <br> <div id="map"></div>',
 			'#attached' => [
 				'library' => [
 					'locations/locations.map',
