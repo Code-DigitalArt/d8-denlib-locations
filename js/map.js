@@ -11,7 +11,7 @@ var address = '';
     Drupal.behaviors.jsLocations = {
         attach: function (context, settings) {
             $('.js-var').once('jsLocations').append('Library Address: ' + drupalSettings.js_address );
-            $('.type').once('jsLocations').append('<select><option value="Home">Home</option><option value="Home">Home</option><option value="Home">Home</option><option value="Home">Home</option><option value="Home">Home</option><option value="Home">Home</option><option value="Home">Home</option></select>')
+            $('.type').once('jsLocations').append('<select class="searchType"><option value="restaurant" selected="selected">Restaurants</option><option value="transit_station">Public Transit</option><option value="store">Stores</option><option value="museum">Museums</option><option value="night_club">Concerts/Clubs</option></select>')
         }
     }
 })(jQuery, Drupal, drupalSettings);
@@ -20,7 +20,9 @@ function initMap() {
 
     var geocoder = new google.maps.Geocoder();
     var mapCenter;
-    var searchType;
+    var searchType = jQuery('.searchType').val();
+
+    console.log(searchType);
 
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 16
@@ -75,3 +77,11 @@ function createMarker(place) {
         map: map
     });
 }
+
+
+jQuery(document).ready(
+    function(){
+        jQuery('.searchType').change(function(){
+            initMap();
+        });
+    });
