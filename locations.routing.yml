@@ -33,13 +33,6 @@ locations.tabs.byers:
   requirements:
     _permission: 'access content'
 
-locations.tabs.centralLibrary:
-  path: '/location/tabs/centralLibrary'
-  defaults:
-    _controller: '\Drupal\locations\Controller\LocationsController::centralLibrary'
-  requirements:
-    _permission: 'access content'
-
 locations.tabs.decker:
   path: '/location/tabs/decker'
   defaults:

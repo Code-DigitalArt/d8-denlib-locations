@@ -14,3 +14,141 @@ locations.tabs_bearValley:
   title: 'Bear Valley'
   base_route: locations.tabs.default
   weight: 3
+
+locations.tabs_blairCaldwell:
+  route_name: locations.tabs.blairCaldwell
+  title: 'Blair Caldwell'
+  base_route: locations.tabs.default
+  weight: 4
+
+locations.tabs_byers:
+  route_name: locations.tabs.byers
+  title: 'Byers'
+  base_route: locations.tabs.default
+  weight: 5
+
+locations.tabs_decker:
+  route_name: locations.tabs.decker
+  title: 'Decker'
+  base_route: locations.tabs.default
+  weight: 6
+
+locations.tabs_eugeneField:
+  route_name: locations.tabs.eugeneField
+  title: 'Eugene Field'
+  base_route: locations.tabs.default
+  weight: 7
+
+locations.tabs_fordWarren:
+  route_name: locations.tabs.fordWarren
+  title: 'Ford Warren'
+  base_route: locations.tabs.default
+  weight: 8
+
+locations.tabs_greenValleyRanch:
+  route_name: locations.tabs.greenValleyRanch
+  title: 'Green Valley Ranch'
+  base_route: locations.tabs.default
+  weight: 9
+
+locations.tabs_hadley:
+  route_name: locations.tabs.hadley
+  title: 'Hadley'
+  base_route: locations.tabs.default
+  weight: 10
+
+locations.tabs_hampden:
+  route_name: locations.tabs.hampden
+  title: 'Hampden'
+  base_route: locations.tabs.default
+  weight: 11
+
+locations.tabs_montbello:
+  route_name: locations.tabs.montbello
+  title: 'Montbello'
+  base_route: locations.tabs.default
+  weight: 12
+
+locations.tabs_parkHill:
+  route_name: locations.tabs.parkHill
+  title: 'Park Hill'
+  base_route: locations.tabs.default
+  weight: 13
+
+locations.tabs_pauline:
+  route_name: locations.tabs.pauline
+  title: 'Pauline'
+  base_route: locations.tabs.default
+  weight: 14
+
+locations.tabs_rodolfoGonzales:
+  route_name: locations.tabs.rodolfoGonzales
+  title: 'Rodolfo Gonzales'
+  base_route: locations.tabs.default
+  weight: 15
+
+locations.tabs_rossBarnum:
+  route_name: locations.tabs.rossBarnum
+  title: 'Ross Barnum'
+  base_route: locations.tabs.default
+  weight: 16
+
+locations.tabs_rossBroadway:
+  route_name: locations.tabs.rossBroadway
+  title: 'Ross Broadway'
+  base_route: locations.tabs.default
+  weight: 17
+
+locations.tabs_rossCherryCreek:
+  route_name: locations.tabs.rossCherryCreek
+  title: 'Ross Cherry Creek'
+  base_route: locations.tabs.default
+  weight: 18
+
+locations.tabs_rossUniversityHills:
+  route_name: locations.tabs.rossUniversityHills
+  title: 'Ross University Hills'
+  base_route: locations.tabs.default
+  weight: 19
+
+locations.tabs_samGary:
+  route_name: locations.tabs.samGary
+  title: 'Sam Gary'
+  base_route: locations.tabs.default
+  weight: 20
+
+locations.tabs_schlessmanFamily:
+  route_name: locations.tabs.schlessmanFamily
+  title: 'Schlessman Family'
+  base_route: locations.tabs.default
+  weight: 21
+
+locations.tabs_smiley:
+  route_name: locations.tabs.smiley
+  title: 'Smiley'
+  base_route: locations.tabs.default
+  weight: 22
+
+locations.tabs_valdezPerry:
+  route_name: locations.tabs.valdezPerry
+  title: 'Valdez Perry'
+  base_route: locations.tabs.default
+  weight: 23
+
+locations.tabs_virginiaVillage:
+  route_name: locations.tabs.virginiaVillage
+  title: 'Virginia Village'
+  base_route: locations.tabs.default
+  weight: 24
+
+locations.tabs_westwood:
+  route_name: locations.tabs.westwood
+  title: 'Westwood'
+  base_route: locations.tabs.default
+  weight: 25
+
+locations.tabs_woodbury:
+  route_name: locations.tabs.woodbury
+  title: 'Woodbury'
+  base_route: locations.tabs.default
+  weight: 26

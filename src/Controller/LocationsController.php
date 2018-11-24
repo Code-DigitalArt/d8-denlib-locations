@@ -41,12 +41,6 @@ class LocationsController extends ControllerBase
 //		return new static($container->get('locations.salutation'));
 //	}
 //
-//	/**
-//	 * Hello World
-//	 *
-//	 * @return array
-//	 */
-//
 //	public function locations()
 //	{
 //		return [
@@ -61,59 +55,81 @@ class LocationsController extends ControllerBase
 //	}
 
 
+	/**
+	 * @return mixed
+	 */
 	public function mainTab()
 	{
-		return [
-			'#title' => 'Central Library',
-			'#markup' => 'Central Library<br> <div class="js-var"></div><br><p>Select local:</p><span class="type"></span> <br> <div id="map"></div>',
-			'#attached' => [
-				'library' => [
-					'locations/locations.map',
-				],
-				'drupalSettings' => [
-					'js_address' => [
-						'10 W 14th Ave Pkwy, Denver, CO 80204'
-					],
-				],
-			],
-		];
-	}
+		$build['#attached']['library'][] = 'locations/locations.map';
+		$build['#attached']['drupalSettings']['js_address'][] = '10 W 14th Ave Pkwy, Denver, CO 80204';
+		$build['#attached']['drupalSettings']['js_map_center'] = json_encode(['lat' => 39.737125, 'lng' => -104.987572]);
+		$build['#title'] = 'Central Library';
+		$build['#markup'] = $build['#title'] . '<br><div class="js-var"></div><br><p>Select local:</p><span class="type"></span><br><div id="map"></div>';
 
+//		$build = [
+//			'#title' => 'Central Library',
+//			'#markup' => 'Central Library<br> <div class="js-var"></div><br><p>Select local:</p><span class="type"></span> <br> <div id="map"></div>',
+//			'#attached' => [
+//				'library' => [
+//					'locations/locations.map',
+//				],
+//				'drupalSettings' => [
+//					'js_address' => [
+//						'10 W 14th Ave Pkwy, Denver, CO 80204'
+//					],
+//				],
+//			],
+//		];
+
+		return $build;
+	}
+	
 	public function athmarPark()
 	{
-		return [
-			'#markup' => 'Branch Athmar'
-		];
+	    $build['#title'] = 'Athmar Park';
+			$build['#markup'] = $build['#title'] . '<br><div class="js-var"></div><br><p>Select local:</p><span class="type"></span><br><div id="map"></div>';
+			$build['#attached']['library'][] = 'locations/locations.map';
+			$build['#attached']['drupalSettings']['js_address'][] = '1055 S Tejon St, Denver, CO 80223';
+			$build['#attached']['drupalSettings']['js_lat'][] = '39.697149';
+			$build['#attached']['drupalSettings']['js_lng'][] = '-105.013016';
+	    
+	    return $build;
 	}
-
+	
 	public function bearValley()
 	{
-		return [
-			'#markup' => 'Branch Bear Valley'
-		];
+	    $build['#title'] = 'Bear Valley';
+			$build['#markup'] = $build['#title'] . '<br><div class="js-var"></div><br><p>Select local:</p><span class="type"></span><br><div id="map"></div>';
+			$build['#attached']['library'][] = 'locations/locations.map';
+			$build['#attached']['drupalSettings']['js_address'][] = '5171 W Dartmouth Ave, Denver, CO 80236';
+	    
+	    return $build;
 	}
-
+	
 	public function blairCaldwell()
 	{
-		return [
-			'#markup' => 'Branch Blair Caldwell'
-		];
+	    $build['#title'] = 'Blair Caldwell';
+			$build['#markup'] = $build['#title'] . '<br><div class="js-var"></div><br><p>Select local:</p><span class="type"></span><br><div id="map"></div>';
+			$build['#attached']['library'][] = 'locations/locations.map';
+			$build['#attached']['drupalSettings']['js_address'][] = '2401 Welton St, Denver, CO 80205';
+	    
+	    return $build;
 	}
-
+	
 	public function byers()
 	{
-		return [
-			'#markup' => 'Branch Byers'
-		];
+	    $build['#title'] = 'Byers';
+			$build['#markup'] = $build['#title'] . '<br><div class="js-var"></div><br><p>Select local:</p><span class="type"></span><br><div id="map"></div>';
+			$build['#attached']['library'][] = 'locations/locations.map';
+			$build['#attached']['drupalSettings']['js_address'][] = '675 Santa Fe Dr, Denver, CO 80204';
+	    
+	    return $build;
 	}
 
-	public function centralLibrary()
-	{
-		return [
-			'#markup' => 'Branch Central Library'
-		];
-	}
 
+	/**
+	 * @return array
+	 */
 	public function decker()
 	{
 		return [
@@ -121,6 +137,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function eugeneField()
 	{
 		return [
@@ -128,6 +147,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function fordWarren()
 	{
 		return [
@@ -135,6 +157,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function greenValleyRanch()
 	{
 		return [
@@ -142,6 +167,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function hadley()
 	{
 		return [
@@ -149,6 +177,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function hampden()
 	{
 		return [
@@ -156,6 +187,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function montbello()
 	{
 		return [
@@ -163,6 +197,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function parkHill()
 	{
 		return [
@@ -170,6 +207,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function paulineRobinson()
 	{
 		return [
@@ -177,6 +217,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function rodolfoGonzales()
 	{
 		return [
@@ -184,6 +227,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function rossBarnum()
 	{
 		return [
@@ -191,6 +237,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function rossBroadway()
 	{
 		return [
@@ -198,6 +247,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function rossCherryCreek()
 	{
 		return [
@@ -205,6 +257,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function rossUniversityHills()
 	{
 		return [
@@ -212,6 +267,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function samGary()
 	{
 		return [
@@ -219,6 +277,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function schlessmanFamily()
 	{
 		return [
@@ -226,6 +287,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function smiley()
 	{
 		return [
@@ -233,6 +297,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function valdezPerry()
 	{
 		return [
@@ -240,6 +307,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function virginiaVillage()
 	{
 		return [
@@ -247,6 +317,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function westWood()
 	{
 		return [
@@ -254,6 +327,9 @@ class LocationsController extends ControllerBase
 		];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function woodbury()
 	{
 		return [

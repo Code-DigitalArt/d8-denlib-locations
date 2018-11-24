@@ -1,9 +1,14 @@
 var map;
-
+var mlat;
+var mlng;
 var address = '';
+var mapCenter;
 
 (function(Drupal, drupalSettings) {
     address = drupalSettings.js_address.toString();
+    mapCenter = JSON.parse(drupalSettings.js_map_center);
+
+    console.log(mapCenter);
 })(Drupal, drupalSettings);
 
 (function ($, Drupal, drupalSettings) {
@@ -18,32 +23,36 @@ var address = '';
 
 function initMap() {
 
-    var geocoder = new google.maps.Geocoder();
-    var mapCenter;
+    // var geocoder = new google.maps.Geocoder();
+
     var searchType = jQuery('.searchType').val();
 
-    console.log(searchType);
-
-    map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 16
-    });
-
-    geocoder.geocode({
-            'address': address
-        },
-        function(results, status) {
-            if(status == google.maps.GeocoderStatus.OK) {
-                new google.maps.Marker({
-                    position: results[0].geometry.location,
-                    map: map
-                });
-                map.setCenter(results[0].geometry.location);
-                // local search
-                mapCenter = map.getCenter();
-
-                localSearch(mapCenter, searchType);
-            }
+    if(map == null){
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: mapCenter
         });
+    }
+
+    localSearch(mapCenter, searchType);
+
+    // geocoder.geocode({
+    //         'address': address
+    //     },
+    //     function(results, status) {
+    //         if(status == google.maps.GeocoderStatus.OK) {
+    //             new google.maps.Marker({
+    //                 position: results[0].geometry.location,
+    //                 map: map
+    //             });
+    //             map.setCenter(results[0].geometry.location);
+    //             mapCenter = map.getCenter();
+    //             // local search
+    //             console.log(mapCenter);
+    //
+    //             localSearch(mapCenter, searchType);
+    //         }
+    //     });
 
 }
 

@@ -10,3 +10,4 @@ locations.map:
     - core/jquery
     - core/jquery.once
     - core/drupalSettings
+    - core/drupal
