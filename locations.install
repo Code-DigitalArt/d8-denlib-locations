@@ -168,9 +168,12 @@ function locations_install(){
 
 	try
 	{
-		db_insert('locations')
-			->fields($fields)
-			->execute();
+		foreach ($fields as $field)
+		{
+			db_insert('locations')
+				->fields($field)
+				->execute();
+		}
 	}
 	catch (Exception $e)
 	{
@@ -185,7 +188,7 @@ function locations_install(){
  */
 function locations_schema(){
 
-	$schema['locations_example'] = [
+	$schema['locations'] = [
 		'description' => 'Stores library location data',
 		'fields' => [
 			'id' => [
@@ -223,11 +226,18 @@ function locations_schema(){
 				'description' => 'Longitudinal coordinate'
 
 			]
+		],
+		'indexes' => [
+			'locations_id' => [
+				'id',
+			]
 		]
 	];
 
-}
-
-function locations_uninstall(){
+	return $schema;
 
 }
+
+//function locations_uninstall(){
+//
+//}
