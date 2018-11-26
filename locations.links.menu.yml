@@ -3,3 +3,23 @@ locations.tabs.default:
   route_name: locations.tabs.default
   weight: 100
   menu_name: main
+
+
+locations.locations_links:
+  class: Drupal\locations\Plugin\Menu\LocationsMenuLink
+  deriver: Drupal\locations\Plugin\Derivative\LocationsMenuLink
+  menu_name: main
+
+# Location entity menu items definition
+entity.location_entity.collection:
+  title: 'Location entity list'
+  route_name: entity.location_entity.collection
+  description: 'List Location entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+#location_entity.admin.structure.settings:
+#  title: 'Location entity settings'
+#  description: 'Configure Location entity entities'
+#  route_name: location_entity.settings
+#  parent: system.admin_structure

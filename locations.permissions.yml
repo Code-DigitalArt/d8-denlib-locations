@@ -1,0 +1,19 @@
+add location entity entities:
+  title: 'Create new Location entity entities'
+
+administer location entity entities:
+  title: 'Administer Location entity entities'
+  description: 'Allow to access the administration form to configure Location entity entities.'
+  restrict access: true
+
+delete location entity entities:
+  title: 'Delete Location entity entities'
+
+edit location entity entities:
+  title: 'Edit Location entity entities'
+
+view published location entity entities:
+  title: 'View published Location entity entities'
+
+view unpublished location entity entities:
+  title: 'View unpublished Location entity entities'

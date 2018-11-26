@@ -1,5 +1,8 @@
 <?php
 
+
+use Drupal\locations\Entity\LocationEntity;
+
 /**
  * Implements hook_install()
  * Installs library location data
@@ -166,18 +169,23 @@ function locations_install(){
 
 	];
 
-	try
-	{
-		foreach ($fields as $field)
-		{
-			db_insert('locations')
-				->fields($field)
-				->execute();
-		}
-	}
-	catch (Exception $e)
-	{
-		return 'Error :' . $e;
+//	try
+//	{
+//		foreach ($fields as $field)
+//		{
+//			db_insert('locations')
+//				->fields($field)
+//				->execute();
+//		}
+//	}
+//	catch (Exception $e)
+//	{
+//		return 'Error :' . $e;
+//	}
+
+	foreach ($fields as $field){
+		$location = LocationEntity::create($field);
+		$location->save();
 	}
 
 }
@@ -186,57 +194,57 @@ function locations_install(){
  * Implements hook_schema()
  * Defines database table used by locations module
  */
-function locations_schema(){
-
-	$schema['locations'] = [
-		'description' => 'Stores library location data',
-		'fields' => [
-			'id' => [
-				'type' => 'serial',
-				'not null' => true,
-				'description' => 'Primary Key: Library Id'
-			],
-			'name' => [
-				'type' => 'varchar',
-				'length' => '255',
-				'not null' => true,
-				'default' => '',
-				'description' => 'Library branch name'
-			],
-			'address' => [
-				'type' => 'varchar',
-				'length' => '255',
-				'not null' => true,
-				'default' => '',
-				'description' => 'Library address'
-			],
-			'latitude' => [
-				'type' => 'float',
-				'unsigned' => false,
-				'size' => 'normal',
-				'not null' => true,
-				'description' => 'Latitudinal coordinate'
-
-			],
-			'longitude' => [
-				'type' => 'float',
-				'unsigned' => false,
-				'size' => 'normal',
-				'not null' => true,
-				'description' => 'Longitudinal coordinate'
-
-			]
-		],
-		'indexes' => [
-			'locations_id' => [
-				'id',
-			]
-		]
-	];
-
-	return $schema;
-
-}
+//function locations_schema(){
+//
+//	$schema['locations'] = [
+//		'description' => 'Stores library location data',
+//		'fields' => [
+//			'id' => [
+//				'type' => 'serial',
+//				'not null' => true,
+//				'description' => 'Primary Key: Library Id'
+//			],
+//			'name' => [
+//				'type' => 'varchar',
+//				'length' => '255',
+//				'not null' => true,
+//				'default' => '',
+//				'description' => 'Library branch name'
+//			],
+//			'address' => [
+//				'type' => 'varchar',
+//				'length' => '255',
+//				'not null' => true,
+//				'default' => '',
+//				'description' => 'Library address'
+//			],
+//			'latitude' => [
+//				'type' => 'float',
+//				'unsigned' => false,
+//				'size' => 'normal',
+//				'not null' => true,
+//				'description' => 'Latitudinal coordinate'
+//
+//			],
+//			'longitude' => [
+//				'type' => 'float',
+//				'unsigned' => false,
+//				'size' => 'normal',
+//				'not null' => true,
+//				'description' => 'Longitudinal coordinate'
+//
+//			]
+//		],
+//		'indexes' => [
+//			'locations_id' => [
+//				'id',
+//			]
+//		]
+//	];
+//
+//	return $schema;
+//
+//}
 
 //function locations_uninstall(){
 //

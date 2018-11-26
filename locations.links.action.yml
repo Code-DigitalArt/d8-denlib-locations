@@ -1,0 +1,5 @@
+entity.location_entity.add_form:
+  route_name: entity.location_entity.add_form
+  title: 'Add Location entity'
+  appears_on:
+    - entity.location_entity.collection
