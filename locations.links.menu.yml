@@ -1,14 +1,19 @@
-locations.tabs.default:
-  title: 'Library locations'
-  route_name: locations.tabs.default
+#locations.tabs.default:
+#  title: 'Library locations'
+#  route_name: locations.tabs.default
+#  weight: 100
+#  menu_name: main
+
+locations.locations_links:
+  title: 'Dynamic library locations'
+  route_name: locations.location
   weight: 100
   menu_name: main
 
-
-locations.locations_links:
-  class: Drupal\locations\Plugin\Menu\LocationsMenuLink
-  deriver: Drupal\locations\Plugin\Derivative\LocationsMenuLink
-  menu_name: main
+#locations.locations_links:
+#  class: Drupal\locations\Plugin\Menu\LocationsMenuLink
+#  deriver: Drupal\locations\Plugin\Derivative\LocationsMenuLink
+#  menu_name: main
 
 # Location entity menu items definition
 entity.location_entity.collection:

@@ -6,6 +6,7 @@ var mapCenter;
 
 (function(Drupal, drupalSettings) {
     address = drupalSettings.js_address.toString();
+    console.log(drupalSettings.js_map_center);
     mapCenter = JSON.parse(drupalSettings.js_map_center);
 
     console.log(mapCenter);
