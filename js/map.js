@@ -6,10 +6,7 @@ var mapCenter;
 
 (function(Drupal, drupalSettings) {
     address = drupalSettings.js_address.toString();
-    console.log(drupalSettings.js_map_center);
     mapCenter = JSON.parse(drupalSettings.js_map_center);
-
-    console.log(mapCenter);
 })(Drupal, drupalSettings);
 
 (function ($, Drupal, drupalSettings) {
@@ -24,8 +21,6 @@ var mapCenter;
 
 function initMap() {
 
-    // var geocoder = new google.maps.Geocoder();
-
     var searchType = jQuery('.searchType').val();
 
     if(map == null){
@@ -36,24 +31,6 @@ function initMap() {
     }
 
     localSearch(mapCenter, searchType);
-
-    // geocoder.geocode({
-    //         'address': address
-    //     },
-    //     function(results, status) {
-    //         if(status == google.maps.GeocoderStatus.OK) {
-    //             new google.maps.Marker({
-    //                 position: results[0].geometry.location,
-    //                 map: map
-    //             });
-    //             map.setCenter(results[0].geometry.location);
-    //             mapCenter = map.getCenter();
-    //             // local search
-    //             console.log(mapCenter);
-    //
-    //             localSearch(mapCenter, searchType);
-    //         }
-    //     });
 
 }
 
