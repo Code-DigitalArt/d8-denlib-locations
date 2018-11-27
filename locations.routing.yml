@@ -1,3 +1,10 @@
+locations.location:
+  path: '/locations/{location_entity}'
+  defaults:
+    _controller: '\Drupal\locations\Controller\LocationsController::content'
+  requirements:
+    _permission: 'access content'
+
 locations.tabs.default:
   path: '/location/tabs'
   defaults:

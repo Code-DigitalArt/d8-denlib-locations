@@ -189,18 +189,18 @@ class LocationEntity extends ContentEntityBase implements LocationEntityInterfac
 	    ->setDisplayConfigurable('form', TRUE)
 	    ->setDisplayConfigurable('view', TRUE);
 
-    $fields['latitude'] = BaseFieldDefinition::create('float')
+    $fields['latitude'] = BaseFieldDefinition::create('string')
 	    ->setLabel(t('Latitude'))
 	    ->setDescription(t('The Latitudinal Coordinate'))
 	    ->setSettings([
 	    	'min' => '-91',
 		    'max' => '91',
+		    'precision' => 6,
 	    ])
 	    ->setDefaultValue(null)
 	    ->setDisplayOptions('view', [
-		    'label' => 'above',
-		    'type' => 'number_unformatted',
-		    'weight' => -4,
+		    'max_length' => 11,
+		    'text_processing' => 0,
 	    ])
 	    ->setDisplayOptions('form', [
 		    'type' => 'number',
@@ -209,12 +209,12 @@ class LocationEntity extends ContentEntityBase implements LocationEntityInterfac
 	    ->setDisplayConfigurable('form', TRUE)
 	    ->setDisplayConfigurable('view', TRUE);
 
-	  $fields['longitude'] = BaseFieldDefinition::create('float')
+	  $fields['longitude'] = BaseFieldDefinition::create('string')
 		  ->setLabel(t('Longitude'))
 		  ->setDescription(t('The Longitudinal Coordinate'))
 		  ->setSettings([
-			  'min' => '-181',
-			  'max' => '180',
+			  'max_length' => 11,
+			  'text_processing' => 0,
 		  ])
 		  ->setDefaultValue(null)
 		  ->setDisplayOptions('view', [

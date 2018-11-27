@@ -13,158 +13,158 @@ function locations_install(){
 		[
 			'name' => 'Athmar Park',
 			'address' => '1055 S Tejon St, Denver, CO 80223',
-			'latitude' => 39.697149,
-			'longitude' => -105.013016
+			'latitude' => '39.697149',
+			'longitude' => '-105.013016'
 		],
 		[
 			'name' => 'Bear Valley',
 			'address' => '5171 W Dartmouth Ave, Denver, CO 80236',
-			'latitude' => 39.656522,
-			'longitude' => -105.051463
+			'latitude' => '39.656522',
+			'longitude' => '-105.051463'
 		],
 		[
 			'name' => 'Blair-Caldwell African American Research',
 			'address' => '2401 Welton St, Denver, CO 80205',
-			'latitude' => 39.752497,
-			'longitude' => -104.981474
+			'latitude' => '39.752497',
+			'longitude' => '-104.981474'
 		],
 		[
 			'name' => 'Byers',
 			'address' => '675 Santa Fe Dr, Denver, CO 80204',
-			'latitude' => 39.727059,
-			'longitude' => -104.998913
+			'latitude' => '39.727059',
+			'longitude' => '-104.998913'
 		],
 		[
 			'name' => 'Central',
 			'address' => '10 W 14th Ave Pkwy, Denver, CO 80204',
-			'latitude' => 39.737125,
-			'longitude' => -104.987572
+			'latitude' => '39.737125',
+			'longitude' => '-104.987572'
 		],
 		[
 			'name' => 'Decker',
 			'address' => '1501 S Logan St, Denver, CO 80210',
-			'latitude' => 39.689059,
-			'longitude' => -104.983206
+			'latitude' => '39.689059',
+			'longitude' => '-104.983206'
 		],
 		[
 			'name' => 'Eugene Field',
 			'address' => '810 S University Blvd, Denver, CO 80209',
-			'latitude' => 39.701755,
-			'longitude' => -104.95898
+			'latitude' => '39.701755',
+			'longitude' => '-104.95898'
 		],
 		[
 			'name' => 'Ford-Warren',
 			'address' => '2825 N High St, Denver, CO 80205',
-			'latitude' => 39.757418,
-			'longitude' => -104.965353
+			'latitude' => '39.757418',
+			'longitude' => '-104.965353'
 		],
 		[
 			'name' => 'Green Valley Ranch',
 			'address' => '4856 Andes Ct, Denver, CO 80249',
-			'latitude' => 39.78468,
-			'longitude' => -104.766966
+			'latitude' => '39.78468',
+			'longitude' => '-104.766966'
 		],
 		[
 			'name' => 'Hadley',
 			'address' => '1890 S Grove St, Denver, CO 80219',
-			'latitude' => 39.68249,
-			'longitude' => -105.025864
+			'latitude' => '39.68249',
+			'longitude' => '-105.025864'
 		],
 		[
 			'name' => 'Hampden',
 			'address' => '9755 E Girard Ave, Denver, CO 80231',
-			'latitude' => 39.654622,
-			'longitude' =>  -104.87478
+			'latitude' => '39.654622',
+			'longitude' =>  '-104.87478'
 		],
 		[
 			'name' => 'Montbello',
 			'address' => '12955 Albrook Dr, Denver, CO 80239',
-			'latitude' => 39.780261,
-			'longitude' => -104.840459
+			'latitude' => '39.780261',
+			'longitude' => '-104.840459'
 		],
 		[
 			'name' => 'Park Hill',
 			'address' => '4705 Montview Blvd, Denver, CO 80207',
-			'latitude' => 39.747817,
-			'longitude' => -104.932566
+			'latitude' => '39.747817',
+			'longitude' => '-104.932566'
 		],
 		[
 			'name' => 'Pauline Robinson',
 			'address' => '5575 E 33rd Ave, Denver, CO 80207',
-			'latitude' => 39.764077,
-			'longitude' => -104.922847
+			'latitude' => '39.764077',
+			'longitude' => '-104.922847'
 		],
 		[
 			'name' => 'Rodolfo "Corky" Gonzales',
 			'address' => '1498 Irving St, Denver, CO 80204',
-			'latitude' => 39.740111,
-			'longitude' => -105.029694
+			'latitude' => '39.740111',
+			'longitude' => '-105.029694'
 		],
 		[
 			'name' => 'Ross-Barnum',
 			'address' => '3570 W 1st Ave, Denver, CO 80219',
-			'latitude' => 39.717957,
-			'longitude' => -105.034543
+			'latitude' => '39.717957',
+			'longitude' => '-105.034543'
 		],
 		[
 			'name' => 'Ross-Broadway',
 			'address' => '33 E Bayaud Ave, Denver, CO 80209',
-			'latitude' => 39.71497,
-			'longitude' => -104.98665
+			'latitude' => '39.71497',
+			'longitude' => '-104.98665'
 		],
 		[
 			'name' => 'Ross-Cherry Creek',
 			'address' => '305 Milwaukee St, Denver, CO 80206',
-			'latitude' => 39.721192,
-			'longitude' => -104.952532
+			'latitude' => '39.721192',
+			'longitude' => '-104.952532'
 		],
 		[
 			'name' => 'Ross-University Hills',
 			'address' => '4310 E Amherst Ave, Denver, CO 80222',
-			'latitude' => 39.665228,
-			'longitude' => -104.937587
+			'latitude' => '39.665228',
+			'longitude' => '-104.937587'
 		],
 		[
 			'name' => 'Sam Gary',
 			'address' => '2961 Roslyn St, Denver, CO 80238',
-			'latitude' => 39.759326,
-			'longitude' => -104.900536
+			'latitude' => '39.759326',
+			'longitude' => '-104.900536'
 		],
 		[
 			'name' => 'Schlessman Family',
 			'address' => '100 Poplar St, Denver, CO 80220',
-			'latitude' => 39.71867,
-			'longitude' => -104.904314
+			'latitude' => '39.71867',
+			'longitude' => '-104.904314'
 		],
 		[
 			'name' => 'Smiley',
 			'address' => '4501 W 46th Ave, Denver, CO 80212',
-			'latitude' => 39.780541,
-			'longitude' => -105.04509
+			'latitude' => '39.780541',
+			'longitude' => '-105.04509'
 		],
 		[
 			'name' => 'Valdez-Perry',
 			'address' => '4690 Vine St, Denver, CO 80216',
-			'latitude' => 39.78172,
-			'longitude' => -104.962102
+			'latitude' => '39.78172',
+			'longitude' => '-104.962102'
 		],
 		[
 			'name' => 'Virginia Village',
 			'address' => '1500 S Dahlia St, Denver, CO 80222',
-			'latitude' => 39.689117,
-			'longitude' => -104.931128
+			'latitude' => '39.689117',
+			'longitude' => '-104.931128'
 		],
 		[
 			'name' => 'Westwood',
 			'address' => '1000 S Lowell Blvd, Denver, CO 80219',
-			'latitude' => 39.698321,
-			'longitude' => -105.034042
+			'latitude' => '39.698321',
+			'longitude' => '-105.034042'
 		],
 		[
 			'name' => 'Woodbury',
 			'address' => '3265 Federal Blvd, Denver, CO 80211',
-			'latitude' => 39.763092,
-			'longitude' => -105.025692
+			'latitude' => '39.763092',
+			'longitude' => '-105.025692'
 		],
 
 	];
